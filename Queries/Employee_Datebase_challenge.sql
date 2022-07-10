@@ -48,3 +48,11 @@ FROM employees AS e
 WHERE (t.to_date = ('9999-01-01'))
 AND (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 ORDER BY e.emp_no;
+
+SELECT COUNT(emp_no)
+FROM unique_titles;
+-- Returns 72458
+
+SELECT COUNT(emp_no)
+FROM mentorship_eligibility;
+-- Returns 1549
